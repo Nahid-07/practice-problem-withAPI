@@ -6,7 +6,7 @@
 const loadData = () => {
     fetch('https://jsonplaceholder.typicode.com/comments')
         .then(res => res.json())
-        .then(data => displayComments(data))
+        .then(data => displayComments(data.slice(0,20)))
 }
 const displayComments = (element) => {
     const container = document.getElementById('comment-container');
