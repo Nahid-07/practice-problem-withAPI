@@ -9,7 +9,6 @@ const displayData = (element) =>{
     const {picture, location, name} = element;
     const {large}=picture;
     const {city, country, postcode, street,timezone} = location;
-    console.log(element)
     div.innerHTML = `
     <img src="${large}" class="card-img-top" alt="...">
         <ul class="list-group list-group-flush">
